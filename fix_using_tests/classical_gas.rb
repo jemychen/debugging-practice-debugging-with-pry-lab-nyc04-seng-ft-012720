@@ -10,7 +10,10 @@ class GasStation
     @brand = brand
     @unleaded_price = unleaded_price
   end
-
+  
+  def unleaded_price=(price)
+    @unleaded_price = price
+  end
 end
 
 petrol_petes = GasStation.new("Petrol Pete's", 50)
